@@ -1,0 +1,108 @@
+{
+  "mod_elements": [
+    {
+      "name": "Evolis",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evolis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sephimod/models/item/evolis.json",
+          "src/main/java/net/mcreator/sephimod/item/EvolisItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EvolisRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evolis_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/sephimod/procedures/EvolisRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Berry",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "berry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/sephimod/item/BerryItem.java",
+          "src/main/resources/assets/sephimod/models/item/berry.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Evolis"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.sephimod.evolis.description_0": "Cette lame semble avoir une histoire a écrire",
+      "item.sephimod.evolis": "Evolis",
+      "item.sephimod.berry": "Madeline Berry"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/sephimod/SephimodMod.java",
+      "src/main/java/net/mcreator/sephimod/init/SephimodModTabs.java",
+      "src/main/java/net/mcreator/sephimod/init/SephimodModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "sephimod",
+    "modName": "Sephimod",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.sephimod"
+  },
+  "mcreatorVersion": 202500227613
+}
